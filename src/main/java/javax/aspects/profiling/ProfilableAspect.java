@@ -1,4 +1,4 @@
-package de.nexum.aspects.profiling;
+package javax.aspects.profiling;
 
 import java.lang.reflect.Method;
 
@@ -11,12 +11,12 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 
 /**
- * @author <a href="mailto:thomas.weckert@nexum.de">Thomas Weckert</a>
+ * @author Thomas Weckert
  */
 @Aspect
 public class ProfilableAspect {
 
-	@Around(value = "@annotation(de.nexum.aspects.profiling.Profilable)")
+	@Around(value = "@annotation(javax.aspects.profiling.Profilable)")
 	public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
 		
 		Object result = null;

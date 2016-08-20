@@ -1,9 +1,12 @@
-package de.nexum.aspects.profiling;
+package javax.aspects.profiling;
 
 import java.util.Map;
 
+import javax.aspects.profiling.LogLevel;
+import javax.aspects.profiling.Profilable;
+
 /**
- * @author <a href="mailto:thomas.weckert@nexum.de">Thomas Weckert</a>
+ * @author Thomas Weckert
  */
 public class DummyBean {
 
